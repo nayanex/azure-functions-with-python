@@ -3,5 +3,6 @@
 azure-functions
 python-dotenv
 pymongo
-black
-isort
+azure-cosmos
+python-dotenv
+
