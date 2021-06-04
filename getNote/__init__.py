@@ -4,7 +4,6 @@ import os
 
 import azure.functions as func
 from bson.json_util import dumps
-
 # importing ObjectId from bson library
 from bson.objectid import ObjectId
 from pymongo import MongoClient
@@ -26,7 +25,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     if id:
         try:
-            client = MongoClient(Config.connection_uri)
+            client = MongoClient(Config.MONGO_URL)
             db = client[Config.MONGO_DB_NAME]
             notes_collection = db["notes"]
 

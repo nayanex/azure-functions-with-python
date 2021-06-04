@@ -13,7 +13,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info("Attempting to connect to MongoDB database :)")
 
     try:
-        client = MongoClient(Config.connection_uri)
+        client = MongoClient(Config.MONGO_URL)
         db = client[Config.MONGO_DB_NAME]
         notes_collection = db["notes"]
 

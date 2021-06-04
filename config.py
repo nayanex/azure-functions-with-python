@@ -12,8 +12,8 @@ class Config(object):
     MONGO_USERNAME = os.environ.get("MONGO_USERNAME")
     MONGO_PASSWORD = os.environ.get("MONGO_PASSWORD")
     MONGO_PORT = os.environ.get("MONGO_PORT")
-    args = "ssl=true&retrywrites=false&ssl_cert_reqs=CERT_NONE"
+    ARGS = "ssl=true&retrywrites=false&ssl_cert_reqs=CERT_NONE"
 
-    # Below URI may need some adjustments for driver version, based on your OS, if running locally
-    # connection_uri = f"mongodb://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/{MONGO_DB}?{args}"
-    connection_uri = os.environ["MyMongoDBConnectionString"]
+    # Below URL may need some adjustments for driver version, based on your OS, if running locally
+    # MONGO_URL = f"mongodb://{MONGO_USERNAME}:{MONGO_PASSWORD}@{MONGO_HOST}:{MONGO_PORT}/{MONGO_DB}?{ARGS}"
+    MONGO_URL = os.environ["MyMongoDBConnectionString"]
