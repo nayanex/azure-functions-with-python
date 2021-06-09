@@ -12,6 +12,9 @@ class Config(object):
     MONGO_USERNAME = os.environ.get("MONGO_USERNAME")
     MONGO_PASSWORD = os.environ.get("MONGO_PASSWORD")
     MONGO_PORT = os.environ.get("MONGO_PORT")
+    SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
+    FROM_EMAIL = os.environ.get("FROM_EMAIL")
+    TO_EMAIL = os.environ.get("TO_EMAILS")
     ARGS = "ssl=true&retrywrites=false&ssl_cert_reqs=CERT_NONE"
 
     # Below URL may need some adjustments for driver version, based on your OS, if running locally
