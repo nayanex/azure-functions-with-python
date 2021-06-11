@@ -15,6 +15,13 @@
       "type": "http",
       "direction": "out",
       "name": "$return"
+    },
+    {
+      "type": "sendGrid",
+      "name": "sendGridMessage",
+      "direction": "out",
+      "apiKey": "SendGridAPI",
+      "from": "holanda.nayana@outlook.com"
     }
   ]
 }

@@ -14,7 +14,7 @@
   },
   "extensions": {
     "sendGrid": {
-      "from": "holanda.nayana@outlook.com"
+      "from": "Azure Functions <samples@functions.com>"
     }
   }
 }

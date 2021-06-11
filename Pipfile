@@ -8,6 +8,7 @@ azure-functions = "*"
 python-dotenv = "*"
 pymongo = "*"
 azure-cosmos = "*"
+sendgrid = "*"
 
 [dev-packages]
 black = "*"
